@@ -47,6 +47,9 @@ add_message_files(
   vscan_tracked.msg
   vscan_tracked_array.msg
   waypoint.msg
+  VehicleCmd.msg
+  TrafficLightResult.msg
+  TrafficLightResultArray.msg
 
 ## Runtime Manager ##
   ConfigApproximateNdtMapping.msg
@@ -69,6 +72,7 @@ add_message_files(
   ConfigPedestrianKf.msg
   ConfigPlannerSelector.msg
   ConfigPoints2Polygon.msg
+  ConfigPointsConcatFilter.msg
   ConfigRandomFilter.msg
   ConfigRcnn.msg
   ConfigRingFilter.msg
@@ -86,13 +90,17 @@ add_message_files(
   steer_cmd.msg
   traffic_light.msg
   state_cmd.msg
+  WaypointState.msg
+  state.msg
+
 
 ## Sync
   Sync_time_monitor.msg
   Sync_time_diff.msg
 
+## Remote Control
+  RemoteCmd.msg
 )
-
 
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
